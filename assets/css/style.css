@@ -58,7 +58,7 @@ img{
 }
 
 html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 .shadow-effect{
