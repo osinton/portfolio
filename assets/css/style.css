@@ -51,12 +51,14 @@ img{
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
 
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .shadow-effect{
