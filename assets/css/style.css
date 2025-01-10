@@ -51,8 +51,13 @@ img{
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    /*border-bottom: 2px solid rgba(255, 255, 255, 0.1);*/
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
 
+html {
+    scroll-snap-type: y mandatory;
 }
 
 .shadow-effect{
@@ -91,6 +96,8 @@ img{
 
 .navbar{
     background-color: var(--color-bg-dark);
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
 }
 
 .navbar .nav-link {
@@ -111,6 +118,13 @@ img{
     .navbar{
         background-color: var(--color-bg);
     }
+
+}
+
+.footer{
+    background-color: var(--color-bg-dark);
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
 
 }
 
