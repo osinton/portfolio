@@ -65,7 +65,7 @@ html {
 }
 
 .shadow-effect:hover{
-    box-shadow: -6px 6px 0 0 var(--color-accent-light);
+    box-shadow: 0 0 10px var(--color-body);
 }
 
 .iconbox{
@@ -80,19 +80,19 @@ html {
 }
 
 .tag-box{
-    padding: 5px 10px;
+    padding: 4px 10px;
     width: auto !important;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-right: 5px;
-    font-size: 15px;
+    font-size: 12px;
     background-color: var(--color-accent-light);
     color: var(--color-bg-dark);
 }
 
-/* NAVBAR */
+/* navbar+footer */
 
 .navbar{
     background-color: var(--color-bg-dark);
@@ -123,12 +123,15 @@ html {
 
 .footer{
     background-color: var(--color-bg-dark);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
     scroll-snap-stop: always;
     scroll-snap-align: start;
 
 }
 
-/* BTN */
+/* btn */
 
 .btn {
     padding: 12px 28px;
@@ -145,6 +148,8 @@ html {
     background-color: var(--color-bg-dark);
     color: var(--color-accent-light)
 }
+
+/* link */
 
 .link-custom {
     font-weight: 700;
@@ -167,16 +172,142 @@ html {
     width: 100%;
 }
 
-/* CARD */
+/* card */
 .card-custom .card-custom-image{
     overflow: hidden;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+
 }
 
 .card-custom .card-custom-image img{
     transition: all 0.4s ease;
+    width: 100%;
 }
+
 
 .card-custom:hover .card-custom-image img{
     transform: scale(1.1);
 }
+
+/* image hover */
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    bottom: 20px;
+    cursor:pointer;
+}
+
+.layer-text{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-top: 400px;
+    padding-left: 20px;
+    transition: 0.3s;
+
+}
+
+.layer-text:hover{
+    padding-top: 245px;
+    position: absolute;
+    
+}
+
+.layer:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.layer h4{
+    font-size: 20px;
+    color: var(--color-body);
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+#myImg{
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* modal content */
+.modal-content {
+  background-color: var(--color-bg-dark);
+  color: var(--color-body);
+  margin: auto;
+  padding: 50px;
+  border: 1px solid var(--color-accent-light);
+  width: 900px;
+  height: 90%;
+  
+}
+
+/* popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--color-bg-dark);
+
+}
+
+/* zoom in the modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* close modal button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--color-body);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-accent-light);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
