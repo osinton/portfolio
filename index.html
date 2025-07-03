@@ -56,9 +56,9 @@
             <div class="row">
                 <div class="col-lg-10">
                     <h1 class="display-4 fw-bold text-uppercase" data-aos="fade-up">Outi Sintonen's <span class="text-accent">portfolio</span></h1>
-                    <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a newly graduated developer full of curiosity and passion for learning new things!</p>
+                    <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a newly graduated junior developer full of curiosity and passion for learning new things!</p>
                     <div data-aos="fade-up" data-aos-delay="600">
-                        <a href="#projects" class="btn btn-accent me-3">See my projects</a>
+                        <a href="#projects" class="btn btn-accent me-3 shadow-effect">See my projects</a>
                     </div>   
                 </div>
             </div>
@@ -83,24 +83,15 @@
                             <i class="las la-code"></i>
                         </div>
                         <h4 class="mt-4 mb-2">Developer</h4>
-                        <p>I am a developer with a Master's Degree in Computer Science.
+                        <p>I am a junior developer with a Master's Degree in Computer Science.
                             I have the most experience in Java development. In addition I am also familiar with C#, Python, JavaScript, CSS, HTML, and SQL. I am always looking forward to learning new technologies as well!</p>
 
                             <div class="row gy-2 p-2">
-                                <div class="tag-box fw-bold">
-                                    <a>Java</a>
-                                </div>
-                                <div class="tag-box fw-bold">
-                                    <a>C#</a>
-                                </div>
-                                <div class="tag-box fw-bold">
-                                    <a>Python</a>
-                                </div>
-                                <div class="tag-box fw-bold">
-                                    <a>JavaScript</a>
-                                </div>
-                                <div class="tag-box fw-bold">
-                                    <a>CSS</a>
+                                <div class="tag-box fw-bold"><a>Java</a></div>
+                                <div class="tag-box fw-bold"><a>C#</a></div>
+                                <div class="tag-box fw-bold"><a>Python</a></div>
+                                <div class="tag-box fw-bold"><a>JavaScript</a></div>
+                                <div class="tag-box fw-bold"><a>CSS</a>
                                 </div>
                                 <div class="tag-box fw-bold">
                                     <a>HTML</a>
@@ -126,21 +117,11 @@
                         <p>I am a curious worker and genuinely interested in learning new things and evolving in the industry. I have experience working in fast-paced environments and have been praised in these roles for both my ability to learn new things quickly as well as my ability to work fast.</p>
                         
                         <div class="row gy-2 p-2">
-                            <div class="tag-box fw-bold">
-                                <a>Communication</a>
-                            </div>
-                            <div class="tag-box fw-bold">
-                                <a>Teamwork</a>
-                            </div>
-                            <div class="tag-box fw-bold">
-                                <a>Problem solving</a>
-                            </div>
-                            <div class="tag-box fw-bold">
-                                <a>Adaptability</a>
-                            </div>
-                            <div class="tag-box fw-bold">
-                                <a>Time management</a>
-                            </div>
+                            <div class="tag-box fw-bold"><a>Communication</a></div>
+                            <div class="tag-box fw-bold"><a>Teamwork</a></div>
+                            <div class="tag-box fw-bold"><a>Problem solving</a></div>
+                            <div class="tag-box fw-bold"><a>Adaptability</a></div>
+                            <div class="tag-box fw-bold"><a>Time management</a></div>
                         </div>
 
                         <div class="mb-3">
@@ -168,6 +149,7 @@
     <section id="projects" class="full-height px-lg-5">
         <div class="container">
 
+            <!-- section title -->
             <div class="row pb-4" data-aos="fade-up">
                 <div class="col-lg-8">
                     <h6 class="text-accent text-uppercase fw-bold">Projects</h6>
@@ -176,8 +158,7 @@
             </div>   
 
             <div class="row gy-4">
-                
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-xl-4" data-aos="fade-up">
 
                     <!------- CARD FOR SUSTAINABLE SHIP ------->
                     <div class="card-custom rounded-4 shadow-effect">
@@ -206,40 +187,73 @@
                         <div id="myModal" class="modal">
 
                             <!-- popup content -->
-                            <div class="modal-content">
+                            <div class="popup-content rounded-4">
                                 <span class="close">&times;</span>
-                                
                                 <div class="container">
                                     
-                                    <div class="row gy-4">
-                                        <div class="col">
-                                            <div >
-                                                <img src="assets/images/ship2.png" alt="">
-                                            </div>
+                                    <!-- image -->
+                                    <div class="row">
+                                        <div class="col-md rounded-4 popup-image">
+                                            <img src="assets/images/ship2.png" alt="">
                                         </div>
-                                        <div class="col">
+
+                                        <!-- next to image text -->
+                                        <div class="col-md">
+
                                             <h4> Sustainable Ship Configurator</h4>
-                                            <p>A thing to calculate the sustainability</p>
-                                            <p>Technologies</p>
+                                            <p>A tool for showcasing and comparing different sustainability solutions in the Finnish maritime industry.</p>
+                                            
+                                            <div class="popup-h5">
+                                                <h5>Technologies</h5>
+                                            </div>
+                                            
+                                            <!-- icons -->
+                                            <div class="row gy-2 p-2">
+                                                <div class="tag-box fw-bold"><a>JavaScript</a></div>
+                                                <div class="tag-box fw-bold"><a>CSS</a></div>
+                                                <div class="tag-box fw-bold"><a>Next.js</a></div>
+                                                <div class="tag-box fw-bold"><a>React</a></div>
+                                            </div>
+                                            
+                                            <div class="popup-h5">
+                                                <div class="row icon-margins">
+                                                        <div class="col-auto icon-size">
+                                                            <i class="las la-globe"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Website</h5>
+                                                        </div>
+                                                    </div>
+
+                                                <a href="https://sus-ship.utu.fi/" target="_blank">https://sus-ship.utu.fi/</a>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <p>The Sustainable Ship Configurator is a tool created with Business Finland for showcasing and comparing different sustainability solutions in the Finnish maritime industry. This university project was created with Next.js framework using JavaScript, CSS, TypeScript, and React. </p>
-                                    <p>I was the team leader for this project and my main responsibilities were keeping the project on the road and in schedule. I also took part in designing the overall appearance as well as programming some of the components.</p>
- 
-                                </div>
+                                    <!-- text below image -->
+                                    <div class="row popup-h5">
+                                        <h5>About</h5>
+                                        <p>The Sustainable Ship Configurator is a tool created with Business Finland for showcasing and comparing different sustainability solutions in the Finnish maritime industry. The website is interactive and different components of the ship can be changed while monitoring the emission changes.</p>
+                                    </div>
 
-                                <!-- link under image-->
-                                <div class="mb-3">
-                                    <a href="https://sus-ship.utu.fi/" target="_blank" class="link-custom float-end">See the website here</a>
-                                </div> 
+                                    <div class="row popup-h5">
+                                        <h5>Process</h5>
+                                        <p>The task for this project was to create a tool to showcase the sustainability solutions but the method to display the data was for the team to decide. We came up with multiple different options and together with the client decided on the result.</p>
+                                        <br>                                        
+                                        <p>This project was created with Next.js framework using TypeScript, JavaScript, CSS, Next.js, and React with a team of five people. As a leader for this project my key responsibilities were keeping the project on the road and in schedule. I also took part in designing the overall appearance as well as programming different components.</p>
+                                    </div>
+
+                                    <div class="row popup-h5">
+                                        <h5>Learnings</h5>
+                                        <p>This was my first project using JavaScript, Next.js, and React, and I learned a lot about them during the project. I also learned how to be a team leader and lead the team to the finish line with great results. The client was very pleased with the outcome of this project and we also got a great grade for this six month capstone university course.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <div data-aos="fade-up" data-aos-delay="600">
-                        
-
+ 
                     <!------- CARD FOR SNAKE PROJECT ------->
                         <div class="card-custom rounded-4 shadow-effect">
                             <div class="card-custom-image">
@@ -255,6 +269,7 @@
                                         <!-- different languages list -->
                                         <div class="row gy-2 p-2">
                                             <div class="tag-box fw-bold"><a>Java</a></div>
+                                            <div class="tag-box fw-bold"><a>JavaFX</a></div>
                                         </div>
                                     </div> 
                                 </div>
@@ -264,26 +279,65 @@
                             <div id="myModal2" class="modal">
 
                                 <!-- popup content -->
-                                <div class="modal-content">
+                                <div class="popup-content rounded-4">
                                     <span class="close">&times;</span>
-                                    
                                     <div class="container">
-                                    
-                                        <div class="row gy-4">
-                                            <div class="col">
+                                        
+                                        <!-- image -->
+                                        <div class="row">
+                                            <div class="col-md rounded-4 popup-image">
                                                 <div >
                                                     <img src="assets/images/snake.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="col">
+                                            
+                                            <!-- next to image text -->
+                                            <div class="col-md">
+
                                                 <h4>Snake Game</h4>
                                                 <p>A game to snake around in</p>
-                                                <p>Technologies</p>
+
+                                                <div class="popup-h5">
+                                                    <h5>Technologies</h5>
+                                                </div>
+
+                                                <!-- icons -->
+                                                <div class="row gy-2 p-2">
+                                                    <div class="tag-box fw-bold"><a>Java</a></div>
+                                                    <div class="tag-box fw-bold"><a>JavaFX</a></div>
+                                                </div>
+
+                                                <div class="popup-h5">
+                                                    <div class="row icon-margins">
+                                                        <div class="col-auto icon-size">
+                                                            <i class="lab la-github"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Github</h5>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <a href="" target="_blank">Link here</a>
+                                                </div>
+    
                                             </div>
                                         </div>
 
-                                        <p>A classic snake game app created on an university project course. The game is created with Java. The design and UI are created with a project partner and the functionality is programmed by me.</p>
-    
+                                        <!-- text below image -->
+                                        <div class="row popup-h5">
+                                            <h5>About</h5>
+                                            <p>A classic snake game app created as a university project.</p>
+                                        </div>
+                                        
+                                        <div class="row popup-h5">
+                                            <h5>Process</h5>
+                                            <p>The game is created with Java with graphical interface created with JavaFX Scene Builder. The design and UI are created with a project partner and the functionality is programmed by me. </p>
+                                        </div>
+
+                                        <div class="row popup-h5">
+                                            <h5>Learnings</h5>
+                                            <p>I learned how to create a simple game in Java. I also learned time management as well as teamwork since I completed this project with a partner. Overall, I think we created a great playable game and learned a lot from it. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -291,9 +345,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 " data-aos="fade-up" data-aos-delay="300">
+                <div class="col-xl-4 " data-aos="fade-up" data-aos-delay="300">
 
-                    <!------- CARD FOR STANLEY RETELLING ------->
+                    <!------- CARD FOR STANLEY ------->
                     <div class="card-custom rounded-4 shadow-effect">
                         <div class="card-custom-image">
 
@@ -318,36 +372,173 @@
                         <div id="myModal3" class="modal">
 
                             <!-- popup content -->
-                            <div class="modal-content">
+                            <div class="popup-content rounded-4">
                                 <span class="close">&times;</span>
-                                
                                 <div class="container">
                                     
-                                    <div class="row gy-4">
-                                        <div class="col">
-                                            <div >
-                                                <img src="assets/images/stanley.png" alt="">
-                                            </div>
+                                     <!-- image -->
+                                    <div class="row">
+                                        <div class="col-md rounded-4 popup-image">
+                                            <img src="assets/images/stanley.png" alt="">
                                         </div>
-                                        <div class="col">
+
+                                        <!-- next to image text -->
+                                        <div class="col-md">
+
                                             <h4>The Stanley Parable Retelling</h4>
                                             <p>A (small) 2D version of The Stanley Parabel game</p>
-                                            <p>Technologies</p>
+
+
+                                            <div class="popup-h5">
+                                                <h5>Technologies</h5>
+                                            </div>
+
+                                             <!-- icons -->
+                                            <div class="row gy-2 p-2">
+                                                <div class="tag-box fw-bold"><a>C#</a></div>
+                                                <div class="tag-box fw-bold"><a>Unity</a></div>
+                                            </div>
+
+                                            <div class="popup-h5">
+                                                <div class="row icon-margins">
+                                                        <div class="col-auto icon-size">
+                                                            <i class="las la-globe"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Website to download from</h5>
+                                                        </div>
+                                                    </div>
+                                                <a href="https://jaahas.itch.io/stanley-retelling" target="_blank">https://jaahas.itch.io/stanley-retelling</a>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <p>A retelling of The Stanley Parable game made for my Master's Thesis, created with Unity and C#. I built this version based on core design features that I had previously detected in the original game.</p>
-                                
-                                </div>
+                                    <!-- text below image -->
+                                    <div class="row popup-h5">
+                                        <h5>About</h5>
+                                        <p>A 2D version and a retelling of The Stanley Parable game I made for my Master's Thesis. The purpose of this project was to reproduce important elements in the original Stanley Parable game in a different format and have people test the game and give feedback regarding their gaming experience.</p>
+                                    </div>
 
-                                <!-- link under image-->
-                                <div class="mb-3">
-                                    <a href="https://jaahas.itch.io/stanley-parable-masters-version" target="_blank" class="link-custom float-end">Download the game here</a>
-                                </div> 
+                                    <div class="row popup-h5">
+                                        <h5>Process</h5>
+                                        <p>The Stanley Parable Retelling is built with Unity game engine using Visual Studio and C# programming language. The making of this game combined the use of different assets, Unity’s own building tools, programming, and combining different elements.</p>
+                                    </div>
+
+                                    <div class="row popup-h5">
+                                        <h5>Learnings</h5>
+                                        <p>Before this project, I had never used C# or Unity for more than a few practice projects. I learned how the mechanics of a 2D top-down game work as well as how to incorporate my ideas in the implementation of a game. This was also the largest project I had ever built and took a lot of time and patience. .</p>
+                                    </div>
+
+                                    <div class="popup-h5">
+                                        <div class="row icon-margins">
+                                                <div class="col-auto icon-size">
+                                                    <i class="las la-globe"></i>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>Thesis website (message for access)</h5>
+                                                </div>
+                                            </div>
+                                        <a href="https://www.utupub.fi/handle/10024/179151" target="_blank">https://www.utupub.fi/handle/10024/179151</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4 " data-aos="fade-up" data-aos-delay="600">
+
+                    <!------- CARD FOR WEBSITE ------->
+                    <div class="card-custom rounded-4 shadow-effect">
+                        <div class="card-custom-image">
+
+                            <!-- trigger the modal -->
+                            <img src="assets/images/portfolio.png" alt=""> 
+                            <div id="myImg4" class="layer">
+
+                                <!-- text on image -->
+                                <div class="layer-text">
+                                    <h4>Sustainable Ship Configurator</h4>
+                                
+                                    <!-- different languages list -->
+                                    <div class="row gy-2 p-2">
+                                        <div class="tag-box fw-bold"><a>HTML</a></div>
+                                        <div class="tag-box fw-bold"><a>CSS</a></div>
+                                        <div class="tag-box fw-bold"><a>Bootstrap</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal -->
+                        <div id="myModal4" class="modal">
+
+                            <!-- popup content -->
+                            <div class="popup-content rounded-4">
+                                <span class="close">&times;</span>
+                                <div class="container">
+                                    
+                                    <!-- image -->
+                                    <div class="row">
+                                        <div class="col-md rounded-4 popup-image">
+                                            <img src="assets/images/portfolio.png" alt="">
+                                        </div>
+
+                                        <!-- next to image text -->
+                                        <div class="col-md">
+
+                                            <h4> Portfolio website</h4>
+                                            <p>The website you're currently on!</p>
+                                            
+                                            <div class="popup-h5">
+                                                <h5>Technologies</h5>
+                                            </div>
+                                            
+                                            <!-- icons -->
+                                            <div class="row gy-2 p-2">
+                                                <div class="tag-box fw-bold"><a>HTML</a></div>
+                                                <div class="tag-box fw-bold"><a>CSS</a></div>
+                                                <div class="tag-box fw-bold"><a>Bootstrap</a></div>
+                                            </div>
+                                            
+                                            <div class="popup-h5">
+                                                <div class="row icon-margins">
+                                                        <div class="col-auto icon-size">
+                                                            <i class="las la-globe"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5>Website</h5>
+                                                        </div>
+                                                    </div>
+
+                                                <a href="https://sus-ship.utu.fi/" target="_blank">https://sus-ship.utu.fi/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- text below image -->
+                                    <div class="row popup-h5">
+                                        <h5>About</h5>
+                                        <p>The Sustainable Ship Configurator is a tool created with Business Finland for showcasing and comparing different sustainability solutions in the Finnish maritime industry. The website is interactive and different components of the ship can be changed while monitoring the emission changes.</p>
+                                    </div>
+
+                                    <div class="row popup-h5">
+                                        <h5>Process</h5>
+                                        <p>The task for this project was to create a tool to showcase the sustainability solutions but the method to display the data was for the team to decide. We came up with multiple different options and together with the client decided on the result.</p>
+                                        <br>                                        
+                                        <p>This project was created with Next.js framework using TypeScript, JavaScript, CSS, Next.js, and React with a team of five people. As a leader for this project my key responsibilities were keeping the project on the road and in schedule. I also took part in designing the overall appearance as well as programming different components.</p>
+                                    </div>
+
+                                    <div class="row popup-h5">
+                                        <h5>Learnings</h5>
+                                        <p>This was my first project using JavaScript, Next.js, and React, and I learned a lot about them during the project. I also learned how to be a team leader and lead the team to the finish line with great results. The client was very pleased with the outcome of this project and we also got a great grade for this six month capstone university course.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>      
         </div>
     </section>
@@ -477,11 +668,13 @@
     var modal = document.getElementById("myModal");
     var modal2 = document.getElementById("myModal2");
     var modal3 = document.getElementById("myModal3");
+    var modal4 = document.getElementById("myModal4");
 
     // get the image that opens the modal
     var img = document.getElementById("myImg");
     var img2 = document.getElementById("myImg2");
     var img3 = document.getElementById("myImg3");
+    var img4 = document.getElementById("myImg4");
 
     // get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -505,21 +698,29 @@
         document.body.style.height = "100%";
     }
 
+    img4.onclick = function(){
+        modal4.style.display = "block";
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100%";
+    }
+
     // when the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
+        modal4.style.display = "none";
         document.body.style.overflow = "auto";
         document.body.style.height = "auto";
     }
 
     // when the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal || event.target == modal2 || event.target == modal3) {
+        if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4) {
             modal.style.display = "none";
             modal2.style.display = "none";
             modal3.style.display = "none";
+            modal4.style.display = "none";
             document.body.style.overflow = "auto";
             document.body.style.height = "auto";
         }
