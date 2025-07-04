@@ -7,6 +7,7 @@
     --color-bg-dark: #161619; 
     --color-accent-mid:#7A7A7C;
     --color-accent-light: #B7A1D1;
+    --color-accent-light-darker: #A591BC;
     --color-accent-dark: #323236;
 }
 
@@ -63,14 +64,11 @@ html {
 }
 
 .shadow-effect{
-    /*transition: all 0.5s;*/
+    transition: all 0.5s;
     box-shadow: 0 0 10px var(--color-bg-dark);
 }
-/*
-.shadow-effect:hover{
-    box-shadow: 0 0 10px var(--color-heading);
-}
-    */
+
+/* boxes */
 
 .iconbox{
     width: 55px;
@@ -154,9 +152,8 @@ html {
 
 .btn-accent:hover,
 .btn-accent:active{
-    background-color: var(--color-accent-light);
+    background-color: var(--color-accent-light-darker);
     color: var(--color-bg-dark);
-    box-shadow: 0 0 10px white;
 }   
 
 
@@ -168,20 +165,6 @@ html {
 
 }
 
-.link-custom::after{
-    content:"";
-    width: 0%;
-    height: 2px;
-    background-color: var(--color-accent-light);
-    position: absolute;
-    left: 0;
-    top: 110%;
-    transition: all 0.4s;
-}
-
-.link-custom:hover::after{
-    width: 100%;
-}
 
 /* card */
 .card-custom .card-custom-image{
@@ -259,20 +242,20 @@ html {
 
 /* modal background */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
     z-index: 1031;
 }
 
-/* popup content */
+/* popup */
 .popup-content {
     background-color: var(--color-bg-dark);
     color: var(--color-body);
@@ -287,7 +270,6 @@ html {
     box-shadow: 0 0 10px var(--color-bg-dark);
 }
 
-/* popup image */
 .popup-image {
     height: 100%;
     width: 100%;
@@ -302,7 +284,6 @@ html {
     margin-top: 30px;
 }
 
-/* zoom in the modal */
 .popup-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
@@ -311,6 +292,23 @@ html {
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
+}
+
+.icon-margins {
+
+    color: var(--color-heading);
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+}
+
+.icon-size{
+    font-size: 18px;
 }
 
 /* close modal button */
@@ -329,22 +327,4 @@ html {
     color: var(--color-accent-light);
     text-decoration: none;
     cursor: pointer;
-}
-
-
-.icon-margins {
-
-    color: var(--color-heading);
-    margin-right: 0;
-    margin-left: 0;
-
-    > .col,
-    > [class*="col-"] {
-        padding-right: 10px;
-        padding-left: 0;
-    }
-}
-
-.icon-size{
-    font-size: 18px;
 }
