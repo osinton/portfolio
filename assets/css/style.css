@@ -68,17 +68,26 @@ html {
     box-shadow: 0 0 10px var(--color-bg-dark);
 }
 
+.shadow-effect-lg{
+    box-shadow: 0 0 10px var(--color-bg-dark);
+}
+
+.shadow-effect-lg:hover{
+    box-shadow: 0 0 10px 5px var(--color-accent-mid);
+}
+
 /* boxes */
 
 .iconbox{
-    width: 55px;
-    height: 55px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    background-color: var(--color-heading);
-    color: var(--color-bg-dark);
+    color: var(--color-heading);
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .tag-box{
@@ -160,7 +169,7 @@ html {
 /* link */
 
 .link-custom {
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
 
 }
