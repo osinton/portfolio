@@ -5,7 +5,10 @@
     --color-heading: #D3D3D3;
     --color-bg: #212125;
     --color-bg-dark: #161619; 
+    --color-accent-mid:#7A7A7C;
     --color-accent-light: #B7A1D1;
+    --color-accent-light-darker: #A591BC;
+    --color-accent-dark: #323236;
 }
 
 body {
@@ -62,11 +65,10 @@ html {
 
 .shadow-effect{
     transition: all 0.5s;
+    box-shadow: 0 0 10px var(--color-bg-dark);
 }
 
-.shadow-effect:hover{
-    box-shadow: -6px 6px 0 0 var(--color-accent-light);
-}
+/* boxes */
 
 .iconbox{
     width: 55px;
@@ -80,19 +82,23 @@ html {
 }
 
 .tag-box{
-    padding: 5px 10px;
+    padding: 4px 10px;
     width: auto !important;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-right: 5px;
-    font-size: 15px;
+    font-size: 12px;
     background-color: var(--color-accent-light);
     color: var(--color-bg-dark);
 }
 
-/* NAVBAR */
+.about-box{
+    background-color: var(--color-bg-dark);
+}
+
+/* navbar + footer */
 
 .navbar{
     background-color: var(--color-bg-dark);
@@ -123,12 +129,16 @@ html {
 
 .footer{
     background-color: var(--color-bg-dark);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
     scroll-snap-stop: always;
     scroll-snap-align: start;
 
 }
 
-/* BTN */
+/* btn */
+
 
 .btn {
     padding: 12px 28px;
@@ -137,14 +147,17 @@ html {
 
 .btn-accent {
     background-color: var(--color-accent-light);
-    border-color: var(--color-accent-light);
     color: var(--color-bg-dark)
 }
 
-.btn-accent:hover{
-    background-color: var(--color-bg-dark);
-    color: var(--color-accent-light)
-}
+.btn-accent:hover,
+.btn-accent:active{
+    background-color: var(--color-accent-light-darker);
+    color: var(--color-bg-dark);
+}   
+
+
+/* link */
 
 .link-custom {
     font-weight: 700;
@@ -152,31 +165,166 @@ html {
 
 }
 
-.link-custom::after{
-    content:"";
-    width: 0%;
-    height: 2px;
-    background-color: var(--color-accent-light);
-    position: absolute;
-    left: 0;
-    top: 110%;
-    transition: all 0.4s;
-}
 
-.link-custom:hover::after{
-    width: 100%;
-}
-
-/* CARD */
+/* card */
 .card-custom .card-custom-image{
     overflow: hidden;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+
 }
 
 .card-custom .card-custom-image img{
     transition: all 0.4s ease;
+    width: 100%;
 }
+
 
 .card-custom:hover .card-custom-image img{
     transform: scale(1.1);
 }
 
+/* image hover */
+.layer{
+    background: transparent;
+    height: 101%;
+    width: 101%;
+    position: absolute;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    bottom: 20px;
+    cursor:pointer;
+}
+
+.layer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 100%;
+    transition: 0.3s;
+    bottom:-50%;
+}
+
+.layer-text:hover{
+    
+    position: absolute;
+    bottom: 0; 
+}
+
+.layer:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.layer h4{
+    font-size: 20px;
+    color: var(--color-body);
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+#myImg{
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+/* modal background */
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1031;
+}
+
+/* popup */
+.popup-content {
+    background-color: var(--color-bg-dark);
+    color: var(--color-body);
+    position: relative;
+    margin: auto;
+    padding: 50px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    /* border: 1px solid var(--color-accent-light); */
+    max-width: 900px;
+    min-height: 50%;
+    box-shadow: 0 0 10px var(--color-bg-dark);
+}
+
+.popup-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+  
+.popup-h5{
+    margin-top: 30px;
+}
+
+.popup-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.icon-margins {
+
+    color: var(--color-heading);
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+}
+
+.icon-size{
+    font-size: 18px;
+}
+
+/* close modal button */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: var(--color-body);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--color-accent-light);
+    text-decoration: none;
+    cursor: pointer;
+}
