@@ -7,7 +7,7 @@
     --color-bg-dark: #161619; 
     --color-accent-mid:#7A7A7C;
     --color-accent-light: #B7A1D1;
-    --color-accent-light-darker: #A591BC;
+    --color-accent-light-darker: #9583AA;
     --color-accent-dark: #323236;
 }
 
@@ -74,10 +74,6 @@ html {
     box-shadow: 0 0 10px var(--color-bg-dark);
 }
 
-.shadow-effect-lg{
-    box-shadow: 0 0 10px var(--color-bg-dark);
-}
-
 .shadow-effect-lg:hover{
     box-shadow: 0 0 10px 5px var(--color-accent-mid);
 }
@@ -113,6 +109,13 @@ html {
     background-color: var(--color-bg-dark);
 }
 
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 /* navbar + footer */
 
 .navbar{
@@ -145,6 +148,7 @@ html {
 .footer{
     background-color: var(--color-bg-dark);
     width: 100%;
+    min-height: 150px;
     text-align: center;
     padding: 30px 0;
     scroll-snap-stop: always;
@@ -391,7 +395,30 @@ html {
     max-width: 800px;
     position: relative;
 }   
-    
+
+.select-box{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 97%;
+    top: 0;
+    bottom: 0;
+    margin-left: -50px;
+    background-color: transparent;
+}
+
+
+
+@media (min-width: 770px){
+    .work-box:hover .select-box{
+    background-color: var(--color-bg-dark);
+    transition: all 0.5s;
+    box-shadow: 0 0 10px var(--color-bg-dark);
+    box-shadow: 0 0 10px 5px var(--color-accent-mid);
+}
+
+}
 
 .year-position{
     display: flex;
