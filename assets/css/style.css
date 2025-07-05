@@ -63,6 +63,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+@media (max-width: 992px){
+    html{
+        scroll-snap-type: none;
+    }
+}
+
 .shadow-effect{
     transition: all 0.5s;
     box-shadow: 0 0 10px var(--color-bg-dark);
@@ -232,6 +238,16 @@ html {
     bottom: 0; 
 }
 
+@media (max-width: 960px){
+    .layer-text{
+        position: absolute;
+        bottom: 0; 
+    }
+    .layer{
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .layer:hover{
     background: rgba(0, 0, 0, 0.5);
 }
@@ -277,6 +293,14 @@ html {
     max-width: 900px;
     min-height: 50%;
     box-shadow: 0 0 10px var(--color-bg-dark);
+}
+
+@media (max-width: 600px){
+    .popup-content{
+        padding: 20px;
+        padding-top: 70px;
+    }
+
 }
 
 .popup-image {
@@ -336,4 +360,43 @@ html {
     color: var(--color-accent-light);
     text-decoration: none;
     cursor: pointer;
+}
+
+/* resume elements */
+.line-vertical{
+    stroke: var(--color-heading);
+    stroke-width: 5;
+}
+
+.line-position{
+    position: relative;
+    width: 5;
+    min-height: 250;
+    max-height: 600;
+
+}
+
+.circle{
+    fill: var(--color-heading);
+}
+
+.circle-position{
+    display: flex;
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+
+.work-box{
+    max-width: 800px;
+    position: relative;
+}   
+    
+
+.year-position{
+    display: flex;
+    position: relative;
+    flex-basis: content;
+    width: 100px;
+    margin-right: 0px;
 }
