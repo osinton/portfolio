@@ -181,7 +181,6 @@ html {
     color: var(--color-bg-dark);
 }   
 
-
 /* link */
 
 .link-custom {
@@ -189,7 +188,6 @@ html {
     position: relative;
 
 }
-
 
 /* card */
 .card-custom .card-custom-image{
@@ -270,47 +268,51 @@ html {
 
 }
 
-#myImg{
-    border-radius: 5px;
-    cursor:pointer;
+/* modal */
+
+.simple-modal{
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* modal background */
-.modal {
-    display: none;
-    position: fixed;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.8);
-    z-index: 1031;
+.simple-modal .btn-close {
+    position: absolute;
+    right: -60px;
+    top: -30px;
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 1;
 }
 
-/* popup */
-.popup-content {
-    background-color: var(--color-bg-dark);
-    color: var(--color-body);
-    position: relative;
-    margin: auto;
-    padding: 50px;
-    padding-top: 70px;
-    margin-bottom: 70px;
-    /* border: 1px solid var(--color-accent-light); */
-    max-width: 900px;
-    min-height: 50%;
-    box-shadow: 0 0 10px var(--color-bg-dark);
-}
-
-@media (max-width: 600px){
-    .popup-content{
-        padding: 20px;
-        padding-top: 70px;
+@media (max-width: 630px){
+    .simple-modal .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1rem;
+        font-weight: normal;
+        opacity: 1;
     }
+}
 
+.simple-modal .btn-close:hover,
+.simple-modal .btn-close:focus {
+    color: var(--color-accent-light);
+    cursor: pointer;
+}
+
+.simple-modal .modal-content{
+    
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.simple-modal .modal-body {
+    position: relative;
+    padding: 0px;
+    min-height: 50%;
+    background-color: var(--color-bg-dark);
+    padding: 50px;
+    padding-top: 60px;
 }
 
 .popup-image {
@@ -319,18 +321,14 @@ html {
     overflow: hidden;
     margin-bottom: 10px;
     position: relative;
-    margin-bottom: 20px;
-    
+    margin-right: 20px;
+    max-width: 600px;
 }
   
 .popup-h5{
     margin-top: 30px;
 }
 
-.popup-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
 
 @keyframes zoom {
     from {transform:scale(0)}
@@ -338,7 +336,6 @@ html {
 }
 
 .icon-margins {
-
     color: var(--color-heading);
     margin-right: 0;
     margin-left: 0;
@@ -354,24 +351,6 @@ html {
     font-size: 18px;
 }
 
-/* close modal button */
-.close {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    color: var(--color-body);
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: var(--color-accent-light);
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* resume elements */
 .line-vertical{
     stroke: var(--color-heading);
@@ -382,7 +361,6 @@ html {
     position: relative;
     width: 5;
     max-height: 600;
-
 }
 
 .circle{
@@ -413,8 +391,6 @@ html {
     background-color: transparent;
 }
 
-
-
 @media (min-width: 770px){
     .work-box:hover .select-box{
         background-color: var(--color-bg-dark);
@@ -422,7 +398,6 @@ html {
         box-shadow: 0 0 10px var(--color-bg-dark);
         box-shadow: 0 0 10px 5px var(--color-accent-mid);
     }
-
 }
 
 .year-position{
