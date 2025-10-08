@@ -390,10 +390,11 @@ html {
     margin-left: -50px;
     background-color: transparent;
 }
+    
 
 @media (min-width: 770px){
     .work-box:hover .select-box{
-        background-color: var(--color-bg-dark);
+        /*background-color: var(--color-bg-dark);*/
         transition: all 0.5s;
         box-shadow: 0 0 10px var(--color-bg-dark);
         box-shadow: 0 0 10px 5px var(--color-accent-mid);
